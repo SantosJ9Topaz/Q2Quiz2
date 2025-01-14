@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics Club Registration</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  height: 50vh;
+  background: url('robotics-theme.png') no-repeat center center/cover;
+}
+
+.container-fluid {
+  min-height: 100vh;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+</style>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="robotics-logo.png" alt="Robotics Club Logo" width="30" height="30" class="d-inline-block align-text-top">
+        Robotics Club
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Page1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Page2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Page3</a></li>
+        </ul>
+        <form class="d-flex ms-3">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Form Section -->
+  <div class="container-fluid bg-dark text-white py-5" style="background-image: url('robotics-background.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="container bg-dark rounded p-4" style="opacity: 0.9;">
+      <h2 class="text-center mb-4">Robotics Club Registration Form</h2>
+      <form>
+        <!-- Name and Age -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="col-md-6">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" class="form-control" id="age" placeholder="Enter your age">
+          </div>
+        </div>
+
+        <!-- Email and Phone -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+        </div>
+
+        <!-- Preferred Topics -->
+        <div class="mb-3">
+          <label class="form-label">Preferred Robotics Topics</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="programming">
+            <label class="form-check-label" for="programming">Programming</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="electronics">
+            <label class="form-check-label" for="electronics">Electronics</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="mechanical">
+            <label class="form-check-label" for="mechanical">Mechanical Design</label>
+          </div>
+        </div>
+
+        <!-- Experience Level -->
+        <div class="mb-3">
+          <label class="form-label">Robotics Experience Level</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experience" id="beginner">
+            <label class="form-check-label" for="beginner">Beginner</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experience" id="intermediate">
+            <label class="form-check-label" for="intermediate">Intermediate</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experience" id="advanced">
+            <label class="form-check-label" for="advanced">Advanced</label>
+          </div>
+        </div>
+
+        <!-- Project Selection -->
+        <div class="mb-3">
+          <label for="project" class="form-label">Preferred Robotics Project</label>
+          <select class="form-select" id="project">
+            <option selected>Choose a project...</option>
+            <option value="1">Robot Arm</option>
+            <option value="2">Autonomous Car</option>
+            <option value="3">Line Follower</option>
+          </select>
+        </div>
+
+        <!-- Statement of Interest -->
+        <div class="mb-3">
+          <label for="interest" class="form-label">Statement of Interest</label>
+          <textarea class="form-control" id="interest" rows="4" placeholder="Explain why you want to join"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary px-4">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
